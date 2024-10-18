@@ -1,0 +1,194 @@
+/* styles.css */
+
+/* Reset de márgenes y padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #151515;
+}
+
+/* Estilos para la navbar */
+nav {
+    background-color: #5d5d5d;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para las filas y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #464646;
+    border-radius: 8px;
+}
+.fondo{
+    background-color: #9ec9f8;
+    padding-bottom: 220px;
+    margin-bottom: -150px;
+}
+/* Estilos para títulos y párrafos */
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #262626;
+}
+.Recepcion{
+    margin-top: 35px;   
+}
+.navbar fixed-top navbar-expand-lg navbar-light bg-light{
+    margin-bottom: 20px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 0.9; /* Cambia la opacidad al 90% cuando se hace hover */
+}
+
+/* Estilos para el carrusel */
+#carouselExampleDark {
+    max-width: 300px; /* Ajusta el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    height: 200px; /* Altura base del carrusel */
+}
+
+/* Ajuste de altura para pantallas medianas (tabletas) */
+@media (min-width: 768px) {
+    #carouselExampleDark {
+        height: 300px; /* Cambia la altura para pantallas medianas */
+    }
+}
+
+/* Ajuste de altura para pantallas grandes (escritorio) */
+@media (min-width: 992px) {
+    #carouselExampleDark {
+        height: 400px; /* Cambia la altura para pantallas grandes */
+    }
+}
+
+/* Ajuste de las imágenes dentro del carrusel */
+#carouselExampleDark .carousel-item img {
+    height: 100%; /* Ajusta la altura de las imágenes para que llenen el carrusel */
+    object-fit: cover; /* Asegura que las imágenes se escalen correctamente y se recorten para llenar el espacio */
+    width: 100%; /* Asegura que las imágenes se expandan al ancho del carrusel */
+}
+/* Estilos para la caja de texto del carrusel */
+#carouselExampleDark .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+#carouselExampleDark .carousel-caption h5 {
+    color: #fff; /* Texto en blanco */
+    margin: 0; /* Elimina el margen para un ajuste más compacto */
+}
+
+#carouselExampleDark .carousel-caption p {
+    color: #ffffff; /* Texto en gris claro */
+    margin-top: 5px; /* Margen superior para separar el párrafo del título */
+}
+.carousel-item {
+    position: relative; /* Asegura que los elementos superpuestos estén en el lugar correcto */
+}
+
+.carousel-caption {
+    opacity: 0; /* Oculta el texto por defecto */
+    transition: opacity 0.3s ease; /* Transición suave para que aparezca */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno para el texto */
+    position: absolute; /* Posicionamiento absoluto para superponerlo en la imagen */
+    transform: translate(0%, -50%); /* Ajusta la posición para centrarlo completamente */
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1; /* Muestra el texto cuando el ratón está sobre la imagen */
+}
+.botoneslinks {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin: 20px 0; /* Añade un margen superior e inferior si lo deseas */
+}
+
+.botoneslinks .btn {
+    background-color: rgb(51, 141, 237); /* Cambia esto al color RGB deseado */
+    border: none; /* Elimina el borde del botón */
+    font-weight: bold; /* Pone el texto en negrita */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+}
+
+.botoneslinks .btn a {
+    color: rgb(0, 0, 0); /* Color del texto dentro del botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    
+}
+.fondo2{
+    background-color: #88d896;
+}
+.prox {
+    background-color: #4de268;
+    text-align: center;   /* Centra el texto horizontalmente */
+    font-size: 30px;     /* Aumenta el tamaño de la fuente (ajusta el tamaño según tus necesidades) */
+    color: #333;         /* Puedes cambiar el color si lo deseas */
+    margin-top: 150px     /* Añade margen superior e inferior para espacio */
+}
+
+.card-group {
+  
+    margin: 50px 200px; /* Espaciado horizontal y vertical */
+}
+.contac{
+    background-color: #d0d0d0;
+    text-align: center;   /* Centra el texto horizontalmente */
+    font-size: 30px;     /* Aumenta el tamaño de la fuente (ajusta el tamaño según tus necesidades) */
+    color: #333;         /* Puedes cambiar el color si lo deseas */
+}
+.con{
+    margin: 20px 100px
+;
+}
+.cap{    
+    text-align: center;   /* Centra el texto horizontalmente */
+    font-size: 30px;     /* Aumenta el tamaño de la fuente (ajusta el tamaño según tus necesidades) */
+    color: #333; 
+}
